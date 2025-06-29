@@ -143,7 +143,41 @@ int main() {
 
   string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
   cout << cars[0];
-  cout << "/n";
+  cout << "\n";
 
+  struct {
+  string brand;
+  string model;
+  int year;
+  } myCar1, myCar2; // We can add variables by separating them with a comma here
+
+  myCar1.brand = "Audi";
+  myCar1.model = "A5";
+  myCar1.year = 2005;
+
+  cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+
+
+  enum Level {
+    LOW = 25,
+    MEDIUM = 50,
+    HIGH = 75
+  };
+
+  enum Level myVar = MEDIUM;
+  cout << "Level: " << myVar << "\n";
+
+  string food = "Pizza";
+  string &meal = food;
+
+  cout << food << "\n"; 
+  cout << meal << "\n"; //Same output
+
+  string* ptr = &food;
+
+  cout << &food << "\n"; // Memory Address
+  cout << ptr << "\n"; //Memory Adress
+ 
+  cout << *ptr << "\n"; //
   return 0;
 }
