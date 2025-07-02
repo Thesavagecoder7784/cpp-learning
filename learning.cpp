@@ -179,5 +179,17 @@ int main() {
   cout << ptr << "\n"; //Memory Adress
  
   cout << *ptr << "\n"; //
+
+  string* ptr = &food;    // Pointer declaration
+
+  // Reference: Output the memory address
+  cout << ptr << "\n"; // 0x6dfed4
+
+  // Dereference: Output the value of food
+  cout << *ptr << "\n"; // Pizza
+
+  int health;
+  cout << sizeof(health) << "\n"; 
+
   return 0;
 }
