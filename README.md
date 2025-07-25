@@ -11,12 +11,13 @@ int arr[5] = {1, 2, 3, 4, 5};
 ## 2. Vectors (std::vector)
 Dynamic array (resizes automatically).
 Part of the Standard Template Library (STL).
-
+```cpp
 #include <vector>
 std::vector<int> v = {1, 2, 3};
 v.push_back(4);       // Add element
 v.pop_back();         // Remove last element
 int x = v[1];         // Access second element
+```
 
 ## 3. Strings (std::string)
 Sequence of characters; easier than C-style strings (char[]).
