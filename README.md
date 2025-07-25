@@ -4,7 +4,9 @@ Repository of learning and applying C++ through some tutorials, projects, and ul
 
 ## 1. Arrays
 Fixed-size collection of elements of the same type.
+'''code
 int arr[5] = {1, 2, 3, 4, 5};
+'''
 
 ## 2. Vectors (std::vector)
 Dynamic array (resizes automatically).
