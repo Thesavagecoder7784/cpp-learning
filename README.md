@@ -69,6 +69,7 @@ dq.pop_back();       // Removes 2
 
 ## 7. Set (std::set)
 Sorted, unique elements.
+```cpp
 #include <set>
 
 std::set<int> s;
@@ -77,70 +78,89 @@ s.insert(3);
 s.insert(5);        // Won’t add duplicate
 s.erase(3);
 bool found = s.count(5); // 1 (true)
+```
 
 ## 8. Unordered Set (std::unordered_set)
 Like set, but uses hashing → faster average-case.
+```cpp
 #include <unordered_set>
 
 std::unordered_set<int> us;
 us.insert(10);
 us.erase(10);
+```
 
 ## 9. Map (std::map)
 Key-value pair container, sorted by keys.
+```cpp
 #include <map>
 
 std::map<std::string, int> m;
 m["apple"] = 2;
 int x = m["apple"];    // 2
+```
 
 ## 10. Unordered Map (std::unordered_map)
 Like map, but faster with hash-based lookup.
+```cpp
 #include <unordered_map>
 
 std::unordered_map<std::string, int> um;
 um["banana"] = 5;
+```
 
 ## 11. Pair (std::pair)
 A container for two values.
+```cpp
 #include <utility>
 
 std::pair<int, std::string> p = {1, "One"};
 int a = p.first;         // 1
 std::string b = p.second; // "One"
+```
 
 ## 12. Priority Queue (std::priority_queue)
 A heap-based queue (by default, max heap).
+```
 #include <queue>
 
 std::priority_queue<int> pq;
 pq.push(3);
 pq.push(10);
 int top = pq.top();   // 10
+```
 
 For a min-heap:
+```cpp
 std::priority_queue<int, std::vector<int>, std::greater<int>> minHeap;
+```
 
 ## 13. Linked List (std::list)
 Doubly linked list with fast insertions/removals from anywhere.
+```cpp
 #include <list>
 
 std::list<int> l = {1, 2, 3};
 l.push_front(0);
 l.push_back(4);
 l.pop_front();
+```
 
 ## 14. Bitset (std::bitset)
 Fixed-size sequence of bits (like an array of booleans).
+```cpp
 #include <bitset>
 
 std::bitset<8> b("10101010");
 bool bit = b[1];   // 1 (true)
 b.set(0);          // set bit at position 0 to 1
+```
 
 ## 15. Tuple (std::tuple)
 Generalized version of pair, can hold more than 2 values.
+```cpp
 #include <tuple>
 
 std::tuple<int, std::string, float> t = {1, "Hello", 3.14f};
 int i = std::get<0>(t);
+```
