@@ -2,6 +2,8 @@
 
 Repository of learning and applying C++ through some tutorials, projects, and ultimately in the field of quantitative finance
 
+# Basic data structures
+
 ## 1. Arrays
 Fixed-size collection of elements of the same type.
 ```cpp
@@ -21,14 +23,17 @@ int x = v[1];         // Access second element
 
 ## 3. Strings (std::string)
 Sequence of characters; easier than C-style strings (char[]).
+```cpp
 #include <string>
 
 std::string s = "Hello";
 s += " World";         // Concatenate
 char c = s[0];         // Access first character
+```
 
 ## 4. Stack (std::stack)
 LIFO (Last In First Out) structure.
+```cpp
 #include <stack>
 
 std::stack<int> st;
@@ -36,9 +41,11 @@ st.push(1);
 st.push(2);
 st.pop();             // Removes 2
 int top = st.top();   // 1
+```
 
 ## 5. Queue (std::queue)
 FIFO (First In First Out) structure
+```cpp
 #include <queue>
 
 std::queue<int> q;
@@ -46,9 +53,11 @@ q.push(1);
 q.push(2);
 q.pop();             // Removes 1
 int front = q.front(); // 2
+```
 
 ## 6. Deque (std::deque)
 Double-ended queue, supports insertion/removal from both ends.
+```cpp
 #include <deque>
 
 std::deque<int> dq;
@@ -56,6 +65,7 @@ dq.push_front(1);
 dq.push_back(2);
 dq.pop_front();      // Removes 1
 dq.pop_back();       // Removes 2
+```
 
 ## 7. Set (std::set)
 Sorted, unique elements.
