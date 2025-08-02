@@ -121,7 +121,7 @@ std::string b = p.second; // "One"
 
 ## 12. Priority Queue (std::priority_queue)
 A heap-based queue (by default, max heap).
-```
+```cpp
 #include <queue>
 
 std::priority_queue<int> pq;
